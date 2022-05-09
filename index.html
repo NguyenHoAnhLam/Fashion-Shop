@@ -15,10 +15,21 @@
 </head>
 <body>
     <div id="wrapper">
+        <div class="mobile__header">
+            <h3 class="sidebar-logo">
+                LOGO
+            </h3>
+            <div class="mobile__header-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
         <div class="grid wide">
             <div class="row">
                 <div class="col l-3">
-                    <nav class="wrapper__sidebar">
+                    <nav class="wrapper__sidebar nav__mobile">
+                        <span class="close__menu-mobile">
+                            <i class="fa-solid fa-xmark"></i>
+                        </span>
                         <h3 class="sidebar-logo">
                             LOGO
                         </h3>
@@ -86,20 +97,20 @@
                             </ul>
                         </div>
                         <div class="category__bottom">
-                            <a href="#" class="category__bottom-link">
+                            <a href="#contact" class="category__bottom-link">
                                 Contact
                             </a>
-                            <a href="#" class="category__bottom-link">
+                            <a href="#" class=" js-new-letter category__bottom-link">
                                 Newsletter
                             </a>
-                            <a href="#" class="category__bottom-link">
+                            <a href="#subscribe" class="category__bottom-link">
                                 Subscribe
                             </a>
                         </div>
                     </nav>        
                 </div>
-                <div class="col l-9">
-                    <div class="wrapper__home">
+                <div class="col l-9 m-12 c-12">
+                    <div class="wrapper__home">              
                         <header class="header">
                             <h3 class="header-title">Jeans</h3>
                             <div class="header__icon">
@@ -127,7 +138,7 @@
                                     8 items
                                 </p>
                                 <div class="row">
-                                    <div class="col l-3">
+                                    <div class="col l-3 m-6 c-6">
                                         <div class="product__item">
                                             <img src="./assets/image/products/jeans1.jpg"  alt="product img" class="product__item-img">
                                             <p class="product__item-name">Ripped Skinny Jeans</p>
@@ -138,7 +149,7 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="col l-3">
+                                    <div class="col l-3 m-6 c-6">
                                         <div class="product__item">
                                             <img src="./assets/image/products/jeans3.jpg"  alt="product img" class="product__item-img">
                                             <p class="product__item-name">  Ripped Skinny Jeans</p>
@@ -148,7 +159,7 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="col l-3">
+                                    <div class="col l-3 m-6 c-6">
                                         <div class="product__item">
                                             <img src="./assets/image/products/jeans1.jpg"  alt="product img" class="product__item-img">
                                             <p class="product__item-name">Ripped Skinny Jeans</p>
@@ -158,7 +169,7 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="col l-3">
+                                    <div class="col l-3 m-6 c-6">
                                         <div class="product__item">
                                             <img src="./assets/image/products/jeans3.jpg"  alt="product img" class="product__item-img">
                                             <p class="product__item-name">  Ripped Skinny Jeans</p>
@@ -168,7 +179,7 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="col l-3">
+                                    <div class="col l-3 m-6 c-6">
                                         <div class="product__item">
                                             <img src="./assets/image/products/jeans1.jpg"  alt="product img" class="product__item-img">
                                             <p class="product__item-name">Ripped Skinny Jeans</p>
@@ -179,7 +190,7 @@
                                             <p class="product__item-new">Sale</p>
                                         </div>
                                     </div>
-                                    <div class="col l-3">
+                                    <div class="col l-3 m-6 c-6">
                                         <div class="product__item">
                                             <img src="./assets/image/products/jeans3.jpg"  alt="product img" class="product__item-img">
                                             <p class="product__item-name">  Ripped Skinny Jeans</p>
@@ -189,7 +200,7 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="col l-3">
+                                    <div class="col l-3 m-6 c-6">
                                         <div class="product__item">
                                             <img src="./assets/image/products/jeans1.jpg"  alt="product img" class="product__item-img">
                                             <p class="product__item-name">Ripped Skinny Jeans</p>
@@ -199,7 +210,7 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="col l-3">
+                                    <div class="col l-3 m-6 c-6">
                                         <div class="product__item">
                                             <img src="./assets/image/products/jeans3.jpg"  alt="product img" class="product__item-img">
                                             <p class="product__item-name">  Ripped Skinny Jeans</p>
@@ -213,15 +224,15 @@
                             </div>
                         </div>
                         <footer class="footer">
-                            <div class="footer__top">
+                            <div id="subscribe" class="footer__top">
                                 <h3 class="footer__top-heading">Subscribe</h3>
                                 <p class="footer__top-title">To get special offers and VIP treatment:</p>
                                 <input type="text" placeholder="Enter e-mail" class="footer-input">
                                 <button class="btn-footer">Subscribe</button>  
                             </div>
-                            <div class="footer__middle">
+                            <div id="contact" class="footer__middle">
                                 <div class="row">
-                                    <div class="col l-4">
+                                    <div class="col l-4 m-4 c-4">
                                         <div class="footer__middle-item">
                                             <h3 class="middle-item-heading">Contact</h3>
                                             <p class="middle-item-text">Questions? Go ahead.</p>
@@ -232,7 +243,7 @@
                                             <button class="btn-middle-item">Send</button>
                                         </div>
                                     </div>
-                                    <div class="col l-4">
+                                    <div class="col l-4 m-4 c-4">
                                         <div class="footer__middle-item">
                                             <h3 class="middle-item-heading">About</h3>
                                             <p class="middle-item-about">
@@ -265,7 +276,7 @@
     
                                         </div>
                                     </div>
-                                    <div class="col l-4">
+                                    <div class="col l-4 m-4 c-4">
                                         <div class="footer__middle-item left">
                                             <h3 class="middle-item-heading">Store</h3>
                                             <p class="middle-item-store"> 
@@ -319,7 +330,21 @@
             </div>
         </div>
     </div>
-
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+           <div class="modal__heading">
+               <h1 class="modal__heading-tiltle">NEWS LETTER</h1>
+               <div class="modal-close js-modal-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>              
+           </div>
+           <h3 class="modal__content">
+            Join our mailing list to receive updates on new arrivals and special offers.
+           </h3>
+           <input type="text" placeholder="Enter-email" class="modal-input">
+           <button class="modal__subscribe">Subscribe</button>
+        </div>
+    </div>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>

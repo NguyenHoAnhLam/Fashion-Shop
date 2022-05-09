@@ -6,6 +6,9 @@
     overflow-y: auto;
     position: fixed;
 }
+.close__menu-mobile{
+    display: none;
+}
 .sidebar-logo{
     font-size: 2.5rem;
     margin: 10px 0;
@@ -313,4 +316,19 @@
 }
 .footer__bottom-link{
     color: #fff;
+}
+
+/* mobile  */
+.mobile__header{
+    align-items: center;
+    height: 84px;
+    background-color: var(--text-color);
+    color: #fff;
+    justify-content:space-between;
+    margin:-8px;
+    display:none;
+}
+.mobile__header-menu{
+    font-size:2.4rem;
+    padding:30px 16px;
 }
